@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<title>WIRUSED Download</title>
-<style>
-  body {
-    margin: 0;
-    height: 100vh;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-  }
-  .star {
-    font-size: 100px;
-    color: black;
-    margin-bottom: 30px;
-  }
-  .download-btn {
-    padding: 15px 30px;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .download-btn:hover {
-    background-color: #333;
-  }
-</style>
+    <meta charset="UTF-8">
+    <title>WIRUSED – Download</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .star {
+            position: absolute;
+            font-size: 120px;
+            color: black;
+        }
+
+        .box {
+            text-align: center;
+            z-index: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 20px 40px;
+            background: black;
+            color: orange;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .btn:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
 
-<div class="star">★</div>
+    <div class="star">★</div>
 
-<!-- Przycisk pobierający ZIP z GitHuba -->
-<a href="https://github.com/TWOJE-KONTO/WIRUSED/archive/refs/heads/main.zip" 
-   class="download-btn" download>
-   Download for Windows
-</a>
+    <div class="box">
+        <h1>WIRUSED</h1>
+        <a class="btn"
+           href="https://github.com/DRX517/WIRUSED-FOR-WINDOWS/releases/download/v1.0/WIRUSED.zip">
+           Download for Windows
+        </a>
+    </div>
 
 </body>
 </html>
